@@ -4,9 +4,7 @@ It is written in Python and powered by the Keras deep learning framework (Tensor
 
 using the following backbone network architectures:
 
-- [ResNeXt{50,101,152}](https://arxiv.org/abs/1611.05431)
-- [ResNet{50,101,152}](https://arxiv.org/abs/1512.03385)
-- [Feature Pyramid Networks](https://arxiv.org/abs/1612.03144) (with ResNet/ResNeXt)
+- [ResNet{101}](https://arxiv.org/abs/1512.03385)
 - [VGG16](https://arxiv.org/abs/1409.1556)
 
 Additional backbone architectures may be easily implemented.
