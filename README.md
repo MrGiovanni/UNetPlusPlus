@@ -17,14 +17,13 @@ Detectron is released under the [MIT]().
 
 ## Citing Detectron
 
-If you use Detectron in your research or wish to refer to the baseline results published in the [Model Zoo](MODEL_ZOO.md), please use the following BibTeX entry.
+If you use Nest-Net in your research, please use the following BibTeX entry.
 
 ```
 @misc{Detectron2018,
-  author =       {Ross Girshick and Ilija Radosavovic and Georgia Gkioxari and
-                  Piotr Doll\'{a}r and Kaiming He},
-  title =        {Detectron},
-  howpublished = {\url{https://github.com/facebookresearch/detectron}},
+  author =       {Zongwei Zhou, Md Mahfuzur Rahman Siddiquee, Jianming Liang},
+  title =        {Nested Neural Networks for Medical Image Segmentation},
+  howpublished = {\url{https://openreview.net/pdf?id=ryPLSWnsM}},
   year =         {2018}
 }
 ```
