@@ -18,10 +18,10 @@ Detectron is released under the [MIT]().
 If you use Nest-Net in your research, please use the following BibTeX entry.
 
 ```
-@misc{Detectron2018,
-  author =       {Zongwei Zhou, Md Mahfuzur Rahman Siddiquee, Jianming Liang},
-  title =        {Nested Neural Networks for Medical Image Segmentation},
-  howpublished = {\url{https://openreview.net/pdf?id=ryPLSWnsM}},
-  year =         {2018}
+@inproceedings{zhou2018nestnet,
+  title={Nested Neural Networks for Medical Image Segmentation},
+  author={Zongwei Zhou, Md Mahfuzur Rahman Siddiquee and Jianming Liang},
+  booktitle={International Conference on Medical Imaging with Deep Learning (MIDL)},
+  year={2018}
 }
 ```
