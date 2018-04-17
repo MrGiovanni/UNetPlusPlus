@@ -1,11 +1,11 @@
 # Nested Neural Networks for Medical Image Segmentation
 
-It is written in Python and powered by the Keras deep learning framework (Tensorflow as backend).
+This is an implementation of Nest-Net in Python and powered by the Keras deep learning framework (Tensorflow as backend).
 
 using the following backbone network architectures:
 
-- [ResNet{101}](https://arxiv.org/abs/1512.03385)
-- [VGG16](https://arxiv.org/abs/1409.1556)
+- [ResNet-101](https://arxiv.org/abs/1512.03385)
+- [VGG-16](https://arxiv.org/abs/1409.1556)
 
 Additional backbone architectures may be easily implemented.
 
