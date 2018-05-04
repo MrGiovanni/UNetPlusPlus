@@ -1,6 +1,23 @@
 # Nested Neural Networks for Medical Image Segmentation
 
-This is an implementation of Nest-Net in Python and powered by the Keras deep learning framework (Tensorflow as backend).
+This is an implementation of Nest-Net in Python and powered by the Keras deep learning framework (Tensorflow as backend). The publication is ["Nested Neural Networks for Medical Image Segmentation"](https://openreview.net/pdf?id=ryPLSWnsM).
+
+## License
+
+Detectron is released under the [MIT]().
+
+## Citing Nest-Net
+
+If you use Nest-Net in your research, please use the following BibTeX entry.
+
+```
+@inproceedings{zhou2018nestnet,
+  title={Nested Neural Networks for Medical Image Segmentation},
+  author={Zongwei Zhou, Md Mahfuzur Rahman Siddiquee and Jianming Liang},
+  booktitle={International Conference on Medical Imaging with Deep Learning (MIDL)},
+  year={2018}
+}
+```
 
 ## Nested U-Net Family
 
@@ -20,19 +37,4 @@ using the following backbone network architectures:
 
 Additional backbone architectures may be easily implemented.
 
-## License
 
-Detectron is released under the [MIT]().
-
-## Citing Nest-Net
-
-If you use Nest-Net in your research, please use the following BibTeX entry.
-
-```
-@inproceedings{zhou2018nestnet,
-  title={Nested Neural Networks for Medical Image Segmentation},
-  author={Zongwei Zhou, Md Mahfuzur Rahman Siddiquee and Jianming Liang},
-  booktitle={International Conference on Medical Imaging with Deep Learning (MIDL)},
-  year={2018}
-}
-```
