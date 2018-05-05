@@ -34,7 +34,7 @@ If you use Nest-Net in your research, please use the following BibTeX entry.
 
 ## Nested FCN Family
 
-using the following backbone network architectures:
+### Benchmarks feature generator backbone
 
 - VGG-16 ([Simonyan, 2014](https://arxiv.org/abs/1409.1556))
 - ResNet-101 ([He, 2016](https://arxiv.org/abs/1512.03385))
