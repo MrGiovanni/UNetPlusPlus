@@ -2,7 +2,9 @@
 
 This is an implementation of ["Nested Neural Networks for Medical Image Segmentation"](https://openreview.net/pdf?id=ryPLSWnsM) in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **Nest-Net** (nested ensemble nets), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
 
-![](https://github.com/MrGiovanni/Nest-Net/blob/master/fig-network-architecture.png)
+<p align="center">
+  <img src="https://github.com/MrGiovanni/Nest-Net/blob/master/fig-network-architecture.png" width="350"/>
+</p>
 
 ## License
 
