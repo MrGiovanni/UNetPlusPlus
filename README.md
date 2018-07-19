@@ -1,6 +1,6 @@
-# Nested Neural Networks for Medical Image Segmentation
+# UNet++: A Nested U-Net Architecture for Medical Image Segmentation
 
-This is an implementation of ["Nested Neural Networks for Medical Image Segmentation"](https://openreview.net/pdf?id=ryPLSWnsM) in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **Nest-Net** (nested ensemble nets), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
+This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"]() in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **UNet++** (nested U-Net architecture), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
 
 <p align="center">
   <img src="https://github.com/MrGiovanni/Nest-Net/blob/master/fig-network-architecture.png" width="560"/>
@@ -10,20 +10,20 @@ This is an implementation of ["Nested Neural Networks for Medical Image Segmenta
 
 Detectron is released under the [MIT]().
 
-## Citing Nest-Net
+## Citing UNet++
 
-If you use Nest-Net in your research, please use the following BibTeX entry.
+If you use UNet++ in your research, please use the following BibTeX entry.
 
 ```
 @inproceedings{zhou2018nestnet,
-  title={Nested Neural Networks for Medical Image Segmentation},
-  author={Zongwei Zhou, Md Mahfuzur Rahman Siddiquee and Jianming Liang},
-  booktitle={International Conference on Medical Imaging with Deep Learning (MIDL)},
+  title={UNet++: A Nested U-Net Architecture for Medical Image Segmentation},
+  author={Zongwei Zhou, Md Mahfuzur Rahman Siddiquee, Nima Tajbakhsh and Jianming Liang},
+  booktitle={Deep Learning in Medical Image Analysis},
   year={2018}
 }
 ```
 
-## Nested U-Net Family
+## UNet++ Family
 
 ### Benchmarks
 
@@ -32,7 +32,7 @@ If you use Nest-Net in your research, please use the following BibTeX entry.
 - ResNet with residual unit
 - DenseNet with dense unit
 
-## Nested FCN Family
+## FCN++ Family
 
 ### Benchmarks feature generator backbone
 
