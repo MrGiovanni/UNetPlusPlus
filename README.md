@@ -15,7 +15,7 @@ Detectron is released under the [MIT]().
 If you use UNet++ in your research, please use the following BibTeX entry.
 
 ```
-@inproceedings{zhou2018nestnet,
+@inproceedings{zhou2018nest,
   title={UNet++: A Nested U-Net Architecture for Medical Image Segmentation},
   author={Zongwei Zhou, Md Mahfuzur Rahman Siddiquee, Nima Tajbakhsh and Jianming Liang},
   booktitle={Deep Learning in Medical Image Analysis},
