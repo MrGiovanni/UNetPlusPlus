@@ -3,7 +3,7 @@
 This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"]() in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **UNet++** (nested U-Net architecture), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
 
 <p align="center">
-  <img src="https://github.com/MrGiovanni/Nest-Net/blob/master/fig-network-architecture.png" width="560"/>
+  <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/fig_unet%2B%2B.png" width="560"/>
 </p>
 
 ## License
