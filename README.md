@@ -12,7 +12,7 @@ Detectron is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/
 
 ## Citing UNet++
 
-If you use UNet++ in your research, please use the following BibTeX entry.
+If you use UNet++ in your research, please consider the following BibTeX entry.
 
 ```
 @inproceedings{zhou2018nest,
