@@ -23,22 +23,22 @@ If you use UNet++ in your research, please use the following BibTeX entry.
 }
 ```
 
-## UNet++ Family
+## Contacts (Maintainers)
 
-### Benchmarks
+*   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
+*   Md Mahfuzur Rahman Siddiquee, email: [mrahmans](mailto:mrahmans@asu.edu)
 
-- Original U-Net ([Ronneberger, 2015](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28))
-- ConvNet with bottleneck unit
-- ResNet with residual unit
-- DenseNet with dense unit
-
-## FCN++ Family
-
-### Benchmarks feature generator backbone
-
-- VGG-16 ([Simonyan, 2014](https://arxiv.org/abs/1409.1556))
-- ResNet-101 ([He, 2016](https://arxiv.org/abs/1512.03385))
-
-Additional backbone architectures may be easily implemented.
-
-
+## TODO:
+- [x] ROIAlign
+- [x] COCO Data Provider
+- [x] Resnet50
+- [x] Feature Pyramid Network
+- [x] Anchor and ROI layer
+- [x] Mask layer
+- [x] Speedup anchor layer with cython
+- [x] Combining all modules together.
+- [x] Testing and debugging (in progress)
+- [ ] Training / evaluation on COCO
+- [ ] Add image summary to show some results
+- [ ] Converting ResneXt
+- [ ] Training >2 images
