@@ -174,7 +174,7 @@ def wU_Net(img_rows, img_cols, color_type=1, num_class=1):
 Standard UNet++ [Zhou et.al, 2018]
 Total params: 9,041,601
 """
-def Nest_Net(img_rows, img_cols, color_type=1, num_class=1):
+def Nest_Net(img_rows, img_cols, color_type=1, num_class=1, deep_supervision=False):
 
     nb_filter = [32,64,128,256,512]
     act = 'elu'
@@ -247,10 +247,13 @@ def Nest_Net(img_rows, img_cols, color_type=1, num_class=1):
     nestnet_output_3 = Conv2D(num_class, (1, 1), activation='sigmoid', name='output_3', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_4)
     nestnet_output_4 = Conv2D(num_class, (1, 1), activation='sigmoid', name='output_4', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
 
-    model = Model(input=img_input, output=[nestnet_output_1,
-                                           nestnet_output_2,
-                                           nestnet_output_3,
-                                           nestnet_output_4])
+    if deep_supervision:
+        model = Model(input=img_input, output=[nestnet_output_1,
+                                               nestnet_output_2,
+                                               nestnet_output_3,
+                                               nestnet_output_4])
+    else:
+        model = Model(input=img_input, output=[nestnet_output_4])
 
     return model
 
