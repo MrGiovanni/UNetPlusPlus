@@ -248,3 +248,15 @@ def Nest_Net(img_rows, img_cols, color_type=1):
     model = Model(input=img_input, output=nestnet_output)
 
     return model
+
+
+if __name__ == '__main__':
+    
+    model = U_Net(96,96,1)
+    model.summary()
+
+    model = wU_Net(96,96,1)
+    model.summary()
+
+    model = Nest_Net(96,96,1)
+    model.summary()
