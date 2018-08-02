@@ -27,18 +27,3 @@ If you use UNet++ in your research, please use the following BibTeX entry.
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
 *   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
-
-## TODO:
-- [x] ROIAlign
-- [x] COCO Data Provider
-- [x] Resnet50
-- [x] Feature Pyramid Network
-- [x] Anchor and ROI layer
-- [x] Mask layer
-- [x] Speedup anchor layer with cython
-- [x] Combining all modules together.
-- [x] Testing and debugging (in progress)
-- [ ] Training / evaluation on COCO
-- [ ] Add image summary to show some results
-- [ ] Converting ResneXt
-- [ ] Training >2 images
