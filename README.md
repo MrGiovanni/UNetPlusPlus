@@ -26,7 +26,7 @@ If you use UNet++ in your research, please use the following BibTeX entry.
 ## Contacts (Maintainers)
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
-*   Md Mahfuzur Rahman Siddiquee, email: [mrahmans](mailto:mrahmans@asu.edu)
+*   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
 
 ## TODO:
 - [x] ROIAlign
