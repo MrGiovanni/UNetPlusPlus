@@ -16,7 +16,6 @@ from keras.optimizers import Adam, RMSprop, SGD
 from keras.regularizers import l2
 from keras.layers.noise import GaussianDropout
 
-from custom_layers import Scale
 import numpy as np
 
 smooth = 1.
@@ -66,7 +65,7 @@ def standard_unit(input_tensor, stage, nb_filter, kernel_size=3):
 Standard U-Net [Ronneberger et.al, 2015]
 Total params: 7,759,521
 """
-def U_Net(img_rows, img_cols, color_type=1):
+def U_Net(img_rows, img_cols, color_type=1, num_class=1):
 
     nb_filter = [32,64,128,256,512]
     act = 'elu'
@@ -110,7 +109,7 @@ def U_Net(img_rows, img_cols, color_type=1):
     conv1_5 = concatenate([up1_5, conv1_1], name='merge15', axis=bn_axis)
     conv1_5 = standard_unit(conv1_5, stage='15', nb_filter=nb_filter[0])
 
-    unet_output = Conv2D(1, (1, 1), activation='sigmoid', name='output', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
+    unet_output = Conv2D(num_class, (1, 1), activation='sigmoid', name='output', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
 
     model = Model(input=img_input, output=unet_output)
 
@@ -120,7 +119,7 @@ def U_Net(img_rows, img_cols, color_type=1):
 wU-Net for comparison
 Total params: 9,282,246
 """
-def wU_Net(img_rows, img_cols, color_type=1):
+def wU_Net(img_rows, img_cols, color_type=1, num_class=1):
 
     # nb_filter = [32,64,128,256,512]
     nb_filter = [35,70,140,280,560]
@@ -165,7 +164,7 @@ def wU_Net(img_rows, img_cols, color_type=1):
     conv1_5 = concatenate([up1_5, conv1_1], name='merge15', axis=bn_axis)
     conv1_5 = standard_unit(conv1_5, stage='15', nb_filter=nb_filter[0])
 
-    unet_output = Conv2D(1, (1, 1), activation='sigmoid', name='output', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
+    unet_output = Conv2D(num_class, (1, 1), activation='sigmoid', name='output', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
 
     model = Model(input=img_input, output=unet_output)
 
@@ -175,7 +174,7 @@ def wU_Net(img_rows, img_cols, color_type=1):
 Standard UNet++ [Zhou et.al, 2018]
 Total params: 9,041,601
 """
-def Nest_Net(img_rows, img_cols, color_type=1):
+def Nest_Net(img_rows, img_cols, color_type=1, num_class=1):
 
     nb_filter = [32,64,128,256,512]
     act = 'elu'
@@ -243,9 +242,15 @@ def Nest_Net(img_rows, img_cols, color_type=1):
     conv1_5 = concatenate([up1_5, conv1_1, conv1_2, conv1_3, conv1_4], name='merge15', axis=bn_axis)
     conv1_5 = standard_unit(conv1_5, stage='15', nb_filter=nb_filter[0])
 
-    nestnet_output = Conv2D(1, (1, 1), activation='sigmoid', name='output', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
+    nestnet_output_1 = Conv2D(num_class, (1, 1), activation='sigmoid', name='output_1', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_2)
+    nestnet_output_2 = Conv2D(num_class, (1, 1), activation='sigmoid', name='output_2', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_3)
+    nestnet_output_3 = Conv2D(num_class, (1, 1), activation='sigmoid', name='output_3', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_4)
+    nestnet_output_4 = Conv2D(num_class, (1, 1), activation='sigmoid', name='output_4', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(conv1_5)
 
-    model = Model(input=img_input, output=nestnet_output)
+    model = Model(input=img_input, output=[nestnet_output_1,
+                                           nestnet_output_2,
+                                           nestnet_output_3,
+                                           nestnet_output_4])
 
     return model
 
