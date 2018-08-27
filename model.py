@@ -19,7 +19,7 @@ from keras.layers.noise import GaussianDropout
 import numpy as np
 
 smooth = 1.
-dropout_rate = 1.0
+dropout_rate = 0.5
 act = "relu"
 
 def mean_iou(y_true, y_pred):
