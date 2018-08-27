@@ -19,7 +19,8 @@ from keras.layers.noise import GaussianDropout
 import numpy as np
 
 smooth = 1.
-dropout_rate = 0.5
+dropout_rate = 1.0
+act = "relu"
 
 def mean_iou(y_true, y_pred):
     prec = []
@@ -50,8 +51,6 @@ def bce_dice_loss(y_true, y_pred):
 
 def standard_unit(input_tensor, stage, nb_filter, kernel_size=3):
 
-    act = 'elu'
-
     x = Conv2D(nb_filter, (kernel_size, kernel_size), activation=act, name='conv'+stage+'_1', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(input_tensor)
     x = Dropout(dropout_rate, name='dp'+stage+'_1')(x)
     x = Conv2D(nb_filter, (kernel_size, kernel_size), activation=act, name='conv'+stage+'_2', kernel_initializer = 'he_normal', padding='same', kernel_regularizer=l2(1e-4))(x)
@@ -68,7 +67,6 @@ Total params: 7,759,521
 def U_Net(img_rows, img_cols, color_type=1, num_class=1):
 
     nb_filter = [32,64,128,256,512]
-    act = 'elu'
 
     # Handle Dimension Ordering for different backends
     global bn_axis
@@ -123,7 +121,6 @@ def wU_Net(img_rows, img_cols, color_type=1, num_class=1):
 
     # nb_filter = [32,64,128,256,512]
     nb_filter = [35,70,140,280,560]
-    act = 'elu'
 
     # Handle Dimension Ordering for different backends
     global bn_axis
@@ -177,7 +174,6 @@ Total params: 9,041,601
 def Nest_Net(img_rows, img_cols, color_type=1, num_class=1, deep_supervision=False):
 
     nb_filter = [32,64,128,256,512]
-    act = 'elu'
 
     # Handle Dimension Ordering for different backends
     global bn_axis
