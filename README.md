@@ -26,7 +26,7 @@ If you use UNet++ in your research, please consider the following BibTeX entry.
 ```
 
 ## Requirements
-Python 3.x, Keras 2.2.2, Tensorflow 1.4.1
+Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
 
 ## Avaliable models:
  - [Unet](https://arxiv.org/abs/1505.04597)
@@ -56,7 +56,7 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1
 
 ## Code examples
 
-Train UNet++ structure (Xnet in the code):  
+Train UNet++ structure (`Xnet` in the code):  
 ```python
 from segmentation_models import Unet, Nestnet, Xnet
 
