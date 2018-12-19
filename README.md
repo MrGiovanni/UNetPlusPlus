@@ -92,3 +92,7 @@ model.fit(x, y)
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
 *   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
+
+## Acknowledgments 
+
+This repository has been built upon [qubvel/segmentation_models](https://github.com/qubvel/segmentation_models). We appreciate the efforts of Pavel Yakubovskiy for providing the well-organized segmentation models zoo to the community.
