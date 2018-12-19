@@ -26,7 +26,7 @@ If you use UNet++ in your research, please consider the following BibTeX entry.
 ```
 
 ## Requirements
-Suggestion: Python 3.x, Keras 2.2.2, Tensorflow 1.4.1
+Python 3.x, Keras 2.2.2, Tensorflow 1.4.1
 
 ## Avaliable models:
  - [Unet](https://arxiv.org/abs/1505.04597)
@@ -79,6 +79,16 @@ model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
 # train model
 model.fit(x, y)
 ```
+
+## TODO
+- [x] Add VGG backbone for UNet++
+- [x] Add ResNet backbone for UNet++
+- [ ] Add DenseNet backbone for UNet++
+- [ ] Add Inception backbone for UNet++
+- [ ] Add [Tiramisu](https://arxiv.org/pdf/1611.09326.pdf]) and Tiramisu++
+- [ ] Add FPN++
+- [ ] Add Linknet++
+- [ ] Add PSPNet++
 
 ## Contacts (Maintainers)
 
