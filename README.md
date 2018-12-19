@@ -8,7 +8,7 @@ This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical I
 
 # License
 
-Detectron is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE).
+UNet++ is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE).
 
 # Paper
 
