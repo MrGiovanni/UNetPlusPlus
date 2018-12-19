@@ -1,6 +1,6 @@
 # UNet++: A Nested U-Net Architecture for Medical Image Segmentation
 
-This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"](https://arxiv.org/pdf/1807.10165.pdf) in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **UNet++** (nested U-Net architecture), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
+This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **UNet++** (nested U-Net architecture), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
 
 <p align="center">
   <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/Figures/fig_UNet%2B%2B.png" width="700"/>
@@ -12,11 +12,10 @@ Detectron is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/
 
 ## Paper
 
-UNet++: A Nested U-Net Architecture for Medical Image Segmentation <br/>
+[UNet++: A Nested U-Net Architecture for Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) <br/>
 Zhou, Zongwei, Md Mahfuzur Rahman Siddiquee, Nima Tajbakhsh, and Jianming Liang <br/>
-Biomedical Informatics, Arizona State University <br/>
-
-Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support, pp. 3-11. Springer, Cham, 2018. **(Oral)**
+[Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
+Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)**
 
 
 If you use UNet++ in your research, please consider the following BibTeX entry.
