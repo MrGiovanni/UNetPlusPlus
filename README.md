@@ -36,9 +36,6 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1
  - [Linknet](https://arxiv.org/abs/1707.03718)
  - [PSPNet](https://arxiv.org/abs/1612.01105)
  
-TODO
- - Apply the redesigned nested skip connection idea to FPN, Linknet, and PSPNet as well
-
 ## Avaliable backbones:
 | Backbone model      |Name| Weights    |
 |---------------------|:--:|:------------:|
@@ -57,9 +54,6 @@ TODO
 | Inception V3        |`inceptionv3`| `imagenet` |
 | Inception ResNet V2 |`inceptionresnetv2`| `imagenet` |
 
-TODO
- - DenseNet and Inception backbones to the redesigned skip nested connection fashion.
- 
 ## Code examples
 
 Train UNet++ structure (Xnet in the code):  
