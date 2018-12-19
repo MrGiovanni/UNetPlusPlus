@@ -6,11 +6,11 @@ This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical I
   <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/Figures/fig_UNet%2B%2B.png" width="700"/>
 </p>
 
-## License
+# License
 
 Detectron is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE).
 
-## Paper
+# Paper
 
 [UNet++: A Nested U-Net Architecture for Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) <br/>
 [Zhou Zongwei](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
@@ -28,7 +28,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 }
 ```
 
-## Requirements
+# Requirements
 Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
 
 ## Avaliable models:
@@ -39,7 +39,7 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
  - [Linknet](https://arxiv.org/abs/1707.03718)
  - [PSPNet](https://arxiv.org/abs/1612.01105)
  
-## Avaliable backbones:
+# Avaliable backbones:
 | Backbone model      |Name| Weights    |
 |---------------------|:--:|:------------:|
 | VGG16               |`vgg16`| `imagenet` |
@@ -57,7 +57,7 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 | Inception V3        |`inceptionv3`| `imagenet` |
 | Inception ResNet V2 |`inceptionresnetv2`| `imagenet` |
 
-## Run the script
+# Run the script
 
 #### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
 ```bash
@@ -82,7 +82,7 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
 
 #### Application 5: [Brain Tumor Segmentation 2013](https://www.smir.ch/BRATS/Start2013)
 
-## Code examples for your own data
+# Code examples for your own data
 
 Train UNet++ structure (`Xnet` in the code):  
 ```python
@@ -102,7 +102,7 @@ model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
 model.fit(x, y)
 ```
 
-## TODO
+# TODO
 - [x] Add VGG backbone for UNet++
 - [x] Add ResNet backbone for UNet++
 - [x] Add ResNeXt backbone for UNet++
@@ -113,11 +113,11 @@ model.fit(x, y)
 - [ ] Add Linknet++
 - [ ] Add PSPNet++
 
-## Contacts (Maintainers)
+# Contacts (Maintainers)
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
 *   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
 
-## Acknowledgments 
+# Acknowledgments 
 
 This repository has been built upon [qubvel/segmentation_models](https://github.com/qubvel/segmentation_models). We appreciate the efforts of Pavel Yakubovskiy for providing the well-organized segmentation models zoo to the community.
