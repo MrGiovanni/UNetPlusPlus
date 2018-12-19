@@ -64,7 +64,7 @@ from segmentation_models import Unet, Nestnet, Xnet
 x, y = ... # range in [0,1]
 
 # prepare model
-model = Xnet(backbone_name='resnet34', encoder_weights='imagenet')
+model = Xnet(backbone_name='resnet34', encoder_weights='imagenet') # biold UNet++
 # model = Unet(backbone_name='resnet34', encoder_weights='imagenet') # build U-Net
 # model = NestNet(backbone_name='resnet34', encoder_weights='imagenet') # build DLA
 
@@ -77,6 +77,7 @@ model.fit(x, y)
 ## TODO
 - [x] Add VGG backbone for UNet++
 - [x] Add ResNet backbone for UNet++
+- [x] Add ResNeXt backbone for UNet++
 - [ ] Add DenseNet backbone for UNet++
 - [ ] Add Inception backbone for UNet++
 - [ ] Add [Tiramisu](https://arxiv.org/pdf/1611.09326.pdf]) and Tiramisu++
