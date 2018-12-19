@@ -100,9 +100,9 @@ from segmentation_models import Unet, Nestnet, Xnet
 x, y = ... # range in [0,1]
 
 # prepare model
-model = Xnet(backbone_name='resnet34', encoder_weights='imagenet') # biold UNet++
-# model = Unet(backbone_name='resnet34', encoder_weights='imagenet') # build U-Net
-# model = NestNet(backbone_name='resnet34', encoder_weights='imagenet') # build DLA
+model = Xnet(backbone_name='resnet50', encoder_weights='imagenet') # build UNet++
+# model = Unet(backbone_name='resnet50', encoder_weights='imagenet') # build U-Net
+# model = NestNet(backbone_name='resnet50', encoder_weights='imagenet') # build DLA
 
 model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
 
