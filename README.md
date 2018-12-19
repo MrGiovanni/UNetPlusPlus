@@ -72,17 +72,12 @@ x, y = ... # range in [0,1]
 # prepare model
 model = Xnet(backbone_name='resnet34', encoder_weights='imagenet')
 # model = Unet(backbone_name='resnet34', encoder_weights='imagenet') # build U-Net
+# model = NestNet(backbone_name='resnet34', encoder_weights='imagenet') # build DLA
 
 model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
 
 # train model
 model.fit(x, y)
-```
-Train FPN model:  
-```python
-from segmentation_models import FPN
-
-model = FPN(backbone_name='resnet34', encoder_weights='imagenet')
 ```
 
 ## Contacts (Maintainers)
