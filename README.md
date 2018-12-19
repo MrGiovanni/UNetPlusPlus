@@ -121,7 +121,7 @@ model.fit(x, y)
 - [ ] Add Linknet++
 - [ ] Add PSPNet++
 
-# Contacts (Maintainers)
+# Maintainers
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
 *   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
