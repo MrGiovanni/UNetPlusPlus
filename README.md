@@ -59,6 +59,7 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 
 ## Run the script
 
+#### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
 ```bash
 CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
                                                      --arch Xnet \
@@ -73,8 +74,15 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
                                                      --weights None \
                                                      --verbose 1
 ```
+#### Application 2: [Liver Tumor Segmentation Challenge](https://competitions.codalab.org/competitions/17094)
 
-## Code examples
+#### Application 3: [Polyp Segmentation ASU]
+
+#### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI)
+
+#### Application 5: [Brain Tumor Segmentation 2013](https://www.smir.ch/BRATS/Start2013)
+
+## Code examples for your own data
 
 Train UNet++ structure (`Xnet` in the code):  
 ```python
