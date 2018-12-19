@@ -12,7 +12,8 @@ This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical I
 [Zhou Zongwei](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 [Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)**
-`> View Publication   > View Code   > View Slides   > View Poster`
+
+`> [View Publication](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)   > View Code   > View Slides   > View Poster`
 
 ```
 @incollection{zhou2018unet++,
