@@ -57,6 +57,16 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 | Inception V3        |`inceptionv3`| `imagenet` |
 | Inception ResNet V2 |`inceptionresnetv2`| `imagenet` |
 
+## Run the script
+
+```bash
+CUDA_VISIBLE_DEVICES=2 python -W ignore DSB2018_application.py --run 1 \
+                                                               --arch Xnet \
+                                                               --backbone vgg16 \
+                                                               --init random \
+                                                               --verbose 1
+```
+
 ## Code examples
 
 Train UNet++ structure (`Xnet` in the code):  
