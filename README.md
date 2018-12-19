@@ -13,7 +13,7 @@ This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical I
 [Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)**
 
-> [View Publication](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)   
+> [View Publication](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)
 > [View Code](https://github.com/MrGiovanni/Nested-UNet)
 > [View Slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf)
 > [View Poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)
