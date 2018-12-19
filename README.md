@@ -13,8 +13,11 @@ Detectron is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/
 ## Paper
 
 UNet++: A Nested U-Net Architecture for Medical Image Segmentation
+
 Zhou, Zongwei, Md Mahfuzur Rahman Siddiquee, Nima Tajbakhsh, and Jianming Liang
+
 Biomedical Informatics, Arizona State University
+
 Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support, pp. 3-11. Springer, Cham, 2018. **(Oral)**
 
 
