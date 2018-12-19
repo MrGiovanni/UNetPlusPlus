@@ -57,6 +57,14 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 | Inception V3        |`inceptionv3`| `imagenet` |
 | Inception ResNet V2 |`inceptionresnetv2`| `imagenet` |
 
+# Installation
+
+```bash
+git clone https://github.com/MrGiovanni/Nested-UNet.git
+cd Nested-UNet
+git submodule update --init --recursive
+```
+
 # Run the scripts
 
 #### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
