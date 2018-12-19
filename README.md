@@ -60,11 +60,18 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 ## Run the script
 
 ```bash
-CUDA_VISIBLE_DEVICES=2 python -W ignore DSB2018_application.py --run 1 \
-                                                               --arch Xnet \
-                                                               --backbone vgg16 \
-                                                               --init random \
-                                                               --verbose 1
+CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
+                                                     --arch Xnet \
+                                                     --backbone vgg16 \
+                                                     --init random \
+                                                     --decoder transpose \
+                                                     --input_rows 96 \
+                                                     --input_cols 96 \
+                                                     --input_deps 96 \
+                                                     --nb_class 1 \
+                                                     --batch_size 2048 \
+                                                     --weights None \
+                                                     --verbose 1
 ```
 
 ## Code examples
