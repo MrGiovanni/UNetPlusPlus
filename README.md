@@ -130,5 +130,4 @@ This repository has been built upon [qubvel/segmentation_models](https://github.
 # License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-UNet++ is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE).
+- **[MIT license](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE)**
