@@ -25,6 +25,66 @@ If you use UNet++ in your research, please consider the following BibTeX entry.
 }
 ```
 
+## Requirements
+Suggestion: Python 3.x, Keras 2.2.2, Tensorflow 1.4.1
+
+## Avaliable models:
+ - [Unet](https://arxiv.org/abs/1505.04597)
+ - [DLA](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Deep_Layer_Aggregation_CVPR_2018_paper.pdf)
+ - [UNet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)
+ - [FPN](http://presentations.cocodataset.org/COCO17-Stuff-FAIR.pdf)
+ - [Linknet](https://arxiv.org/abs/1707.03718)
+ - [PSPNet](https://arxiv.org/abs/1612.01105)
+ 
+TODO
+ - Apply the redesigned nested skip connection idea to FPN, Linknet, and PSPNet as well
+
+## Avaliable backbones:
+| Backbone model      |Name| Weights    |
+|---------------------|:--:|:------------:|
+| VGG16               |`vgg16`| `imagenet` |
+| VGG19               |`vgg19`| `imagenet` |
+| ResNet18            |`resnet18`| `imagenet` |
+| ResNet34            |`resnet34`| `imagenet` |
+| ResNet50            |`resnet50`| `imagenet`<br>`imagenet11k-places365ch` |
+| ResNet101           |`resnet101`| `imagenet` |
+| ResNet152           |`resnet152`| `imagenet`<br>`imagenet11k` |
+| ResNeXt50           |`resnext50`| `imagenet` |
+| ResNeXt101          |`resnext101`| `imagenet` |
+| DenseNet121         |`densenet121`| `imagenet` |
+| DenseNet169         |`densenet169`| `imagenet` |
+| DenseNet201         |`densenet201`| `imagenet` |
+| Inception V3        |`inceptionv3`| `imagenet` |
+| Inception ResNet V2 |`inceptionresnetv2`| `imagenet` |
+
+TODO
+ - DenseNet and Inception backbones to the redesigned skip nested connection fashion.
+ 
+## Code examples
+
+Train UNet++ structure (Xnet in the code):  
+```python
+from segmentation_models import Unet, Nestnet, Xnet
+
+# prepare data
+x, y = ... # range in [0,1]
+
+# prepare model
+model = Xnet(backbone_name='resnet34', encoder_weights='imagenet')
+# model = Unet(backbone_name='resnet34', encoder_weights='imagenet') # build U-Net
+
+model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
+
+# train model
+model.fit(x, y)
+```
+Train FPN model:  
+```python
+from segmentation_models import FPN
+
+model = FPN(backbone_name='resnet34', encoder_weights='imagenet')
+```
+
 ## Contacts (Maintainers)
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
