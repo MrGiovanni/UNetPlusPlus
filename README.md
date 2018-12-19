@@ -128,6 +128,5 @@ model.fit(x, y)
 This repository has been built upon [qubvel/segmentation_models](https://github.com/qubvel/segmentation_models). We appreciate the effort of Pavel Yakubovskiy for providing well-organized segmentation models to the community.
 
 # License
-
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-- **[MIT license](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE)**
+[MIT license](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE)
