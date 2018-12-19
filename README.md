@@ -6,10 +6,6 @@ This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical I
   <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/Figures/fig_UNet%2B%2B.png" width="700"/>
 </p>
 
-# License
-
-UNet++ is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE).
-
 # Paper
 
 [UNet++: A Nested U-Net Architecture for Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) <br/>
@@ -130,3 +126,7 @@ model.fit(x, y)
 # Acknowledgment
 
 This repository has been built upon [qubvel/segmentation_models](https://github.com/qubvel/segmentation_models). We appreciate the effort of Pavel Yakubovskiy for providing well-organized segmentation models to the community.
+
+# License
+
+UNet++ is released under the [MIT](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE).
