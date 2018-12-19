@@ -31,7 +31,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 # Requirements
 Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
 
-# Avaliable models
+# Avaliable architectures
  - [Unet](https://arxiv.org/abs/1505.04597)
  - [DLA](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Deep_Layer_Aggregation_CVPR_2018_paper.pdf)
  - [UNet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)
@@ -110,7 +110,7 @@ model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
 model.fit(x, y)
 ```
 
-# TODO
+# To do
 - [x] Add VGG backbone for UNet++
 - [x] Add ResNet backbone for UNet++
 - [x] Add ResNeXt backbone for UNet++
