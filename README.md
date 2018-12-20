@@ -67,7 +67,7 @@ pip install -r requirements.txt
 git submodule update --init --recursive
 ```
 
-# Run the scripts
+# Running the scripts
 
 #### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
 ```bash
@@ -86,15 +86,15 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
 ```
 #### Application 2: [Liver Tumor Segmentation Challenge (LiTS)](https://competitions.codalab.org/competitions/17094)
 
-#### Application 3: [Polyp Segmentation ASU-Mayo](https://polyp.grand-challenge.org/databases/)
+#### Application 3: [Polyp Segmentation (ASU-Mayo)](https://polyp.grand-challenge.org/databases/)
 
 #### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI)
 
-#### Application 5: [Multiparametric Brain Tumor Segmentation (BRATS) 2013](https://www.smir.ch/BRATS/Start2013)
+#### Application 5: [Multiparametric Brain Tumor Segmentation (BRATS 2013)](https://www.smir.ch/BRATS/Start2013)
 
 # Code examples for your own data
 
-Train UNet++ structure (`Xnet` in the code):  
+Train a UNet++ structure (`Xnet` in the code):  
 ```python
 from segmentation_models import Unet, Nestnet, Xnet
 
