@@ -1,6 +1,6 @@
 # UNet++: A Nested U-Net Architecture for Medical Image Segmentation
 
-This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) in Python and powered by the Keras deep learning framework (Tensorflow as backend). For the first time, a new architecture, called **UNet++** (nested U-Net architecture), is proposed for a more precise segmentation. We introduced the intermediate layers to U-Nets, which naturally form multiple new up-sampling expanding paths of different depths, resulting in an ensemble of U-Nets with a partially shared contracting path.
+This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) in Keras deep learning framework (Tensorflow as backend). **UNet++** (nested U-Net architecture) is proposed for a more precise segmentation. We introduce intermediate layers to skip connections of U-Net, which naturally form multiple new up-sampling paths from different depths, ensembling U-Nets of various receptive fields.
 
 <p align="center">
   <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/Figures/fig_UNet%2B%2B.png" width="700"/>
