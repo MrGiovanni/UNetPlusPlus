@@ -127,6 +127,7 @@ model.fit(x, y)
 
 *   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
 *   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
+*   Nima Tajbakhsh, github: [ntajbakhsh](https://github.com/ntajbakhsh)
 
 # Acknowledgments
 
