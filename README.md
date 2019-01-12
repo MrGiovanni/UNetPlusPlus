@@ -78,13 +78,27 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
                                                      --decoder transpose \
                                                      --input_rows 96 \
                                                      --input_cols 96 \
-                                                     --input_deps 96 \
+                                                     --input_deps 3 \
                                                      --nb_class 1 \
                                                      --batch_size 2048 \
                                                      --weights None \
                                                      --verbose 1
 ```
 #### Application 2: [Liver Tumor Segmentation Challenge (LiTS)](https://competitions.codalab.org/competitions/17094)
+```bash
+CUDA_VISIBLE_DEVICES=0 python BRATS2013_application.py --run 1 \
+                                                     --arch Xnet \
+                                                     --backbone vgg16 \
+                                                     --init random \
+                                                     --decoder transpose \
+                                                     --input_rows 256 \
+                                                     --input_cols 256 \
+                                                     --input_deps 3 \
+                                                     --nb_class 1 \
+                                                     --batch_size 2048 \
+                                                     --weights None \
+                                                     --verbose 1
+```
 
 #### Application 3: [Polyp Segmentation (ASU-Mayo)](https://polyp.grand-challenge.org/databases/)
 
