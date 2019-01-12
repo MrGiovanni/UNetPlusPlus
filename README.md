@@ -85,6 +85,12 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
                                                      --verbose 1
 ```
 #### Application 2: [Liver Tumor Segmentation Challenge (LiTS)](https://competitions.codalab.org/competitions/17094)
+
+#### Application 3: [Polyp Segmentation (ASU-Mayo)](https://polyp.grand-challenge.org/databases/)
+
+#### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI)
+
+#### Application 5: [Multiparametric Brain Tumor Segmentation (BRATS 2013)](https://www.smir.ch/BRATS/Start2013)
 ```bash
 CUDA_VISIBLE_DEVICES=0 python BRATS2013_application.py --run 1 \
                                                      --arch Xnet \
@@ -99,12 +105,6 @@ CUDA_VISIBLE_DEVICES=0 python BRATS2013_application.py --run 1 \
                                                      --weights None \
                                                      --verbose 1
 ```
-
-#### Application 3: [Polyp Segmentation (ASU-Mayo)](https://polyp.grand-challenge.org/databases/)
-
-#### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI)
-
-#### Application 5: [Multiparametric Brain Tumor Segmentation (BRATS 2013)](https://www.smir.ch/BRATS/Start2013)
 
 # Code examples for your own data
 
