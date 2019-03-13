@@ -35,7 +35,7 @@ from glob import glob
 from skimage.transform import resize
 from optparse import OptionParser
 from segmentation_models import Nestnet, Unet, Xnet
-from model import *
+from model_logic import *
 import helper_functions as H
 from keras.utils import plot_model
 
