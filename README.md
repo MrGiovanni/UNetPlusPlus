@@ -61,8 +61,8 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 # Installation
 
 ```bash
-git clone https://github.com/MrGiovanni/Nested-UNet.git
-cd Nested-UNet
+git clone https://github.com/MrGiovanni/UNetPlusPlus.git
+cd UNetPlusPlus
 pip install -r requirements.txt
 git submodule update --init --recursive
 ```
