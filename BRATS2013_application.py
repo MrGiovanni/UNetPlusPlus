@@ -293,7 +293,7 @@ model.compile(optimizer="Adam",
               metrics=["binary_crossentropy", mean_iou, dice_coef])
 p_test = model.predict(x_test, batch_size=config.batch_size, verbose=config.verbose)
 eva = model.evaluate(x_test, y_test, batch_size=config.batch_size, verbose=config.verbose)
-IoU = H.compute_iou(y_test, p_test)
+IoU = compute_iou(y_test, p_test)
 print("\nSetup: {}".format(config.exp_name))
 print(">> Testing dataset mIoU  = {:.2f}%".format(np.mean(IoU)))
 print(">> Testing dataset mDice = {:.2f}%".format(eva[3]*100.0))
