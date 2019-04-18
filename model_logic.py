@@ -45,6 +45,33 @@ def bce_dice_loss(y_true, y_pred):
     return 0.5 * keras.losses.binary_crossentropy(y_true, y_pred) - dice_coef(y_true, y_pred)
 
 
+def compute_iou(img1, img2):
+
+    img1 = np.array(img1)
+    img2 = np.array(img2)
+
+    if img1.shape[0] != img2.shape[0]:
+        raise ValueError("Shape mismatch: the number of images mismatch.")
+    IoU = np.zeros( (img1.shape[0],), dtype=np.float32)
+    for i in range(img1.shape[0]):
+        im1 = np.squeeze(img1[i]>0.5)
+        im2 = np.squeeze(img2[i]>0.5)
+
+        if im1.shape != im2.shape:
+            raise ValueError("Shape mismatch: im1 and im2 must have the same shape.")
+
+        # Compute Dice coefficient
+        intersection = np.logical_and(im1, im2)
+
+        if im1.sum() + im2.sum() == 0:
+            IoU[i] = 100
+        else:
+            IoU[i] = 2. * intersection.sum() * 100.0 / (im1.sum() + im2.sum())
+        #database.display_image_mask_pairs(im1, im2)
+
+    return IoU
+
+
 ########################################
 # 2D Standard
 ########################################
