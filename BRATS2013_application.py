@@ -3,7 +3,13 @@
 
 # In[6]:
 """
-CUDA_VISIBLE_DEVICES=2 python -W ignore BRATS2013_application.py --run 1 --arch Unet --backbone vgg16 --init random --verbose 1
+CUDA_VISIBLE_DEVICES=2 python -W ignore BRATS2013_application.py \
+--run 1 \
+--arch Unet \
+--backbone vgg16 \
+--init random \
+--verbose 1 \
+--data /mnt/dataset/shared/zongwei/BRATS2013/npy
 """
 
 # Keras==2.2.2
@@ -25,7 +31,6 @@ import math
 import SimpleITK as sitk
 from matplotlib import offsetbox
 import matplotlib.pyplot as plt
-from photutils import BoundingBox
 import shutil
 from sklearn import metrics
 import random
@@ -35,7 +40,7 @@ from glob import glob
 from skimage.transform import resize
 from optparse import OptionParser
 from segmentation_models import Nestnet, Unet, Xnet
-from model_logic import *
+from helper_functions import *
 from keras.utils import plot_model
 
 sys.setrecursionlimit(40000)
@@ -53,6 +58,7 @@ parser.add_option("--input_deps", dest="input_deps", help="input deps", default=
 parser.add_option("--nb_class", dest="nb_class", help="number of class", default=1, type="int")
 parser.add_option("--verbose", dest="verbose", help="verbose", default=0, type="int")
 parser.add_option("--weights", dest="weights", help="pre-trained weights", default=None, type="string")
+parser.add_option("--data", dest="DATA_DIR", help="data set location", default="Data/BRATS", type="string")
 parser.add_option("--batch_size", dest="batch_size", help="batch size", default=2048, type="int")
 
 (options, args) = parser.parse_args()
@@ -95,7 +101,6 @@ if not os.path.exists(logs_path):
     os.makedirs(logs_path)
     
 class setup_config():
-    DATA_DIR = 'Data/BRATS/'
     optimizer = "Adam"
     lr = 1e-4
     GPU_COUNT = 1
@@ -113,6 +118,7 @@ class setup_config():
                  verbose=1,
                  decoder_block_type=None,
                  nb_class=None,
+                 DATA_DIR = 'Data/BRATS',
                 ):
         self.model = model
         self.backbone = backbone
@@ -125,6 +131,7 @@ class setup_config():
         self.verbose = verbose
         self.decoder_block_type = decoder_block_type
         self.nb_class = nb_class
+        self.DATA_DIR = DATA_DIR
         if nb_class > 1:
             self.activation = "softmax"
         else:
@@ -141,13 +148,19 @@ class setup_config():
                 print("{:30} {}".format(a, getattr(self, a)))
         print("\n")
         
-config = setup_config(input_rows=options.input_rows,
+config = setup_config(model=options.arch,
+                      backbone=options.backbone,
+                      init=options.init,
+                      input_rows=options.input_rows,
                       input_cols=options.input_cols,
                       input_deps=options.input_deps,
                       batch_size=options.batch_size,
+                      verbose=options.verbose,
+                      decoder_block_type=options.decoder_block_type,
                       nb_class=options.nb_class,
+                      DATA_DIR=options.DATA_DIR,
                      )
-
+config.display()
 
 # In[3]:
 
@@ -160,22 +173,19 @@ shuffle(ind_list)
 nb_valid = int(nb_cases*0.2)
 x_valid, y_valid = x_train[ind_list[:nb_valid]], y_train[ind_list[:nb_valid]]
 x_train, y_train = x_train[ind_list[nb_valid:]], y_train[ind_list[nb_valid:]]
-x_test = np.load(os.path.join(config.DATA_DIR, "BRATS2013_Syn_Flair_Test_X.npy"))
-y_test = np.load(os.path.join(config.DATA_DIR, "BRATS2013_Syn_Flair_Test_S.npy"))
-
 x_train, y_train = np.einsum('ijkl->iklj', x_train), np.einsum('ijkl->iklj', y_train)
 x_valid, y_valid = np.einsum('ijkl->iklj', x_valid), np.einsum('ijkl->iklj', y_valid)
-x_test, y_test = np.einsum('ijkl->iklj', x_test), np.einsum('ijkl->iklj', y_test)
 y_train = np.array(y_train>0, dtype="int")[:,:,:,0:1]
 y_valid = np.array(y_valid>0, dtype="int")[:,:,:,0:1]
-y_test = np.array(y_test>0, dtype="int")[:,:,:,0:1]
-
-
-print("")
 print(">> Train data: {} | {} ~ {}".format(x_train.shape, np.min(x_train), np.max(x_train)))
 print(">> Train mask: {} | {} ~ {}\n".format(y_train.shape, np.min(y_train), np.max(y_train)))
 print(">> Valid data: {} | {} ~ {}".format(x_valid.shape, np.min(x_valid), np.max(x_valid)))
 print(">> Valid mask: {} | {} ~ {}\n".format(y_valid.shape, np.min(y_valid), np.max(y_valid)))
+
+x_test = np.load(os.path.join(config.DATA_DIR, "BRATS2013_Syn_Flair_Test_X.npy"))
+y_test = np.load(os.path.join(config.DATA_DIR, "BRATS2013_Syn_Flair_Test_S.npy"))
+x_test, y_test = np.einsum('ijkl->iklj', x_test), np.einsum('ijkl->iklj', y_test)
+y_test = np.array(y_test>0, dtype="int")[:,:,:,0:1]
 print(">> Test  data: {} | {} ~ {}".format(x_test.shape, np.min(x_test), np.max(x_test)))
 print(">> Test  mask: {} | {} ~ {}\n".format(y_test.shape, np.min(y_test), np.max(y_test)))
 
@@ -185,18 +195,7 @@ print(">> Test  mask: {} | {} ~ {}\n".format(y_test.shape, np.min(y_test), np.ma
 # In[27]:
 
 
-config = setup_config(model=options.arch,
-                      backbone=options.backbone,
-                      init=options.init,
-                      input_rows=options.input_rows,
-                      input_cols=options.input_cols,
-                      input_deps=options.input_deps,
-                      batch_size=options.batch_size,
-                      verbose=options.verbose,
-                      decoder_block_type=options.decoder_block_type,
-                      nb_class=options.nb_class,
-                     )
-config.display()
+
 if config.model == "Unet":
     model = Unet(backbone_name=config.backbone,
                  encoder_weights=config.weights,
@@ -221,7 +220,8 @@ model.compile(optimizer="Adam",
               loss=dice_coef_loss, 
               metrics=["binary_crossentropy", mean_iou, dice_coef])
 
-plot_model(model, to_file=os.path.join(model_path, config.exp_name+".png"))
+
+# plot_model(model, to_file=os.path.join(model_path, config.exp_name+".png"))
 if os.path.exists(os.path.join(model_path, config.exp_name+".txt")):
     os.remove(os.path.join(model_path, config.exp_name+".txt"))
 with open(os.path.join(model_path, config.exp_name+".txt"),'w') as fh:
