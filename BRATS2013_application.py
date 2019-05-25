@@ -217,7 +217,7 @@ elif config.model == "Xnet":
 else:
     raise
 model.compile(optimizer="Adam", 
-              loss=dice_coef_loss, 
+              loss=bce_dice_loss, 
               metrics=["binary_crossentropy", mean_iou, dice_coef])
 
 
