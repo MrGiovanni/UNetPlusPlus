@@ -34,8 +34,11 @@ def Upsample2D_block(filters, stage, cols, kernel_size=(3,3), upsample_rate=(2,2
 
         x = UpSampling2D(size=upsample_rate, name=up_name)(input_tensor)
 
-        if skip is not None:
-            x = Concatenate(name=merge_name)([x, skip])
+        if (type(skip) != list and skip is not None) or (type(skip) == list and None not in skip):
+            if type(skip) is list:
+                x = Concatenate(name=merge_name)([x] + skip)
+            else:
+                x = Concatenate(name=merge_name)([x, skip])
 
         x = ConvRelu(filters, kernel_size, use_batchnorm=use_batchnorm,
                      conv_name=conv_name + '1', bn_name=bn_name + '1', relu_name=relu_name + '1')(x)
