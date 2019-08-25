@@ -113,7 +113,7 @@ Train a UNet++ structure (`Xnet` in the code):
 from segmentation_models import Unet, Nestnet, Xnet
 
 # prepare data
-x, y = ... # range in [0,1]
+x, y = ... # range in [0,1], the network expects input channels of 3
 
 # prepare model
 model = Xnet(backbone_name='resnet50', encoder_weights='imagenet', decoder_block_type='transpose') # build UNet++
