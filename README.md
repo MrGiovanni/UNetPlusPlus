@@ -29,6 +29,9 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 }
 ```
 
+##### Other implementation
+- [[PyTorch](https://github.com/4uiiurz1/pytorch-nested-unet)] (by 4ui_iurz1)
+
 # Requirements
 Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
 
