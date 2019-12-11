@@ -8,27 +8,20 @@ UNet++ is a new general purpose image segmentation architecture that aims at a m
 
 # Paper
 
+This repository provides the official Keras implementation of UNet+++ in the following papers:
+
 **UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation** <br/>
 [Zhou Zongwei](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 [Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
-IEEE Transactions on Medical Imaging  <br/>
+IEEE Transactions on Medical Imaging ([TMI](https://ieee-tmi.org/)) <br/>
+paper | [code](https://github.com/MrGiovanni/Nested-UNet)
 
 **UNet++: A Nested U-Net Architecture for Medical Image Segmentation** <br/>
 [Zhou Zongwei](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
-[Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
-Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)**
-[paper](https://arxiv.org/abs/1807.10165) | [Code](https://github.com/MrGiovanni/Nested-UNet) | [Slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [Poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)
+Arizona State University <br/>
+Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)** <br/>
+[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/Nested-UNet) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)
 
-```
-@incollection{zhou2018unet++,
-  title={UNet++: A Nested U-Net Architecture for Medical Image Segmentation},
-  author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
-  booktitle={Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
-  pages={3--11},
-  year={2018},
-  publisher={Springer}
-}
-```
 
 #### Other implementation
 - [[PyTorch](https://github.com/4uiiurz1/pytorch-nested-unet)] (by 4ui_iurz1)
