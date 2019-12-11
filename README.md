@@ -1,6 +1,6 @@
 # UNet++: A Nested U-Net Architecture for Medical Image Segmentation
 
-This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical Image Segmentation"](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) in Keras deep learning framework (Tensorflow as backend). **UNet++** (nested U-Net architecture) is proposed for a more precise segmentation. We introduce intermediate layers to skip connections of U-Net, which naturally form multiple new up-sampling paths from different depths, ensembling U-Nets of various receptive fields.
+UNet++ is a new general purpose image segmentation architecture that aims at a more precise segmentation. UNet++ consists of U-Nets of varying depths whose decoders are densely connected at the same resolution via the redesigned skip pathways.
 
 <p align="center">
   <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/Figures/fig_UNet%2B%2B.png" width="700"/>
@@ -8,15 +8,16 @@ This is an implementation of ["UNet++: A Nested U-Net Architecture for Medical I
 
 # Paper
 
-[UNet++: A Nested U-Net Architecture for Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) <br/>
+**UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation** <br/>
+[Zhou Zongwei](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
+[Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
+IEEE Transactions on Medical Imaging  <br/>
+
+**UNet++: A Nested U-Net Architecture for Medical Image Segmentation** <br/>
 [Zhou Zongwei](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 [Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)**
-
-- View [Publication](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)<br/>
-- View [Code](https://github.com/MrGiovanni/Nested-UNet)<br/>
-- View [Slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf)<br/>
-- View [Poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)<br/>
+[paper](https://arxiv.org/abs/1807.10165) | [Code](https://github.com/MrGiovanni/Nested-UNet) | [Slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [Poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)
 
 ```
 @incollection{zhou2018unet++,
