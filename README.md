@@ -14,7 +14,7 @@ This repository provides the official Keras implementation of UNet++ in the foll
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 IEEE Transactions on Medical Imaging ([TMI](https://ieee-tmi.org/)) <br/>
-paper | [code](https://github.com/MrGiovanni/Nested-UNet)
+[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/Nested-UNet)
 
 **UNet++: A Nested U-Net Architecture for Medical Image Segmentation** <br/>
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
@@ -23,13 +23,12 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 [paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/Nested-UNet) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
 
 
-#### Other implementation
+# Other implementation
 - [[PyTorch](https://github.com/4uiiurz1/pytorch-nested-unet)] (by 4ui_iurz1)
 
-# Requirements
-Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
+# What is in this repository
 
-# Available architectures
+## Available architectures
  - [U-Net](https://arxiv.org/abs/1505.04597)
  - [DLA](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Deep_Layer_Aggregation_CVPR_2018_paper.pdf)
  - **[UNet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)**
@@ -37,7 +36,7 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
  - [Linknet](https://arxiv.org/abs/1707.03718)
  - [PSPNet](https://arxiv.org/abs/1612.01105)
  
-# Available backbones
+## Available backbones
 | Backbone model      |Name| Weights    |
 |---------------------|:--:|:------------:|
 | VGG16               |`vgg16`| `imagenet` |
@@ -55,7 +54,12 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 | Inception V3        |`inceptionv3`| `imagenet` |
 | Inception ResNet V2 |`inceptionresnetv2`| `imagenet` |
 
-# Installation
+# How to use UNet++
+
+## Requirements
+Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
+
+## Installation
 
 ```bash
 git clone https://github.com/MrGiovanni/UNetPlusPlus.git
@@ -64,7 +68,7 @@ pip install -r requirements.txt
 git submodule update --init --recursive
 ```
 
-# Running the scripts
+## Running the scripts
 
 #### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
 ```bash
