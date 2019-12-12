@@ -28,7 +28,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 
 # What is in this repository
 
-## Available architectures
+### 1. Available architectures
  - [U-Net](https://arxiv.org/abs/1505.04597)
  - [DLA](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Deep_Layer_Aggregation_CVPR_2018_paper.pdf)
  - **[UNet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)**
@@ -36,7 +36,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
  - [Linknet](https://arxiv.org/abs/1707.03718)
  - [PSPNet](https://arxiv.org/abs/1612.01105)
  
-## Available backbones
+### 2. Available backbones
 | Backbone model      |Name| Weights    |
 |---------------------|:--:|:------------:|
 | VGG16               |`vgg16`| `imagenet` |
