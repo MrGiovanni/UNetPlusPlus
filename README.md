@@ -56,10 +56,10 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 
 # How to use UNet++
 
-## Requirements
+### 1. Requirements
 Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
 
-## Installation
+### 2. Installation
 
 ```bash
 git clone https://github.com/MrGiovanni/UNetPlusPlus.git
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 git submodule update --init --recursive
 ```
 
-## Running the scripts
+### 3. Running the scripts
 
 #### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
 ```bash
