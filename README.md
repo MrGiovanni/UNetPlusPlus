@@ -2,6 +2,7 @@
 
 UNet++ is a new general purpose image segmentation architecture for more accurate image segmentation. UNet++ consists of U-Nets of varying depths whose decoders are densely connected at the same resolution via the redesigned skip pathways, which aim to address two key challenges of the U-Net: 1) unknown depth of the optimal architecture and 2) the unnecessarily restrictive design of skip connections.
 
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 <p align="center">
   <img src="https://github.com/MrGiovanni/Nested-UNet/blob/master/Figures/fig_UNet%2B%2B.png" width="700"/>
 </p>
@@ -138,17 +139,19 @@ model.fit(x, y)
 - [ ] Add Linknet++
 - [ ] Add PSPNet++
 
-# Maintainers
-
-*   Zongwei Zhou, homepage: [zongweiz.com](https://www.zongweiz.com)
-*   Md Mahfuzur Rahman Siddiquee, github: [mahfuzmohammad](https://github.com/mahfuzmohammad)
-*   Nima Tajbakhsh, github: [ntajbakhsh](https://github.com/ntajbakhsh)
+# Citation
+If you use UNet++ for your research, please cite our papers:
+```
+@incollection{zhou2018unetplusplus,
+  title={Unet++: A nested u-net architecture for medical image segmentation},
+  author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
+  booktitle={Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
+  pages={3--11},
+  year={2018},
+  publisher={Springer}
+}
+```
 
 # Acknowledgments
 
 This repository has been built upon [qubvel/segmentation_models](https://github.com/qubvel/segmentation_models). We appreciate the effort of Pavel Yakubovskiy for providing well-organized segmentation models to the community. This research has been supported partially by NIH under Award Number R01HL128785, by ASU and Mayo Clinic through a Seed Grant and an Innovation Grant. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIH.
-
-# License
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-[MIT license](https://github.com/MrGiovanni/Nested-UNet/blob/master/LICENSE)
