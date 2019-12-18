@@ -27,6 +27,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 # Other implementation
 - [[PyTorch](https://github.com/4uiiurz1/pytorch-nested-unet)] (by 4ui_iurz1)
 - [[PyTorch](https://towardsdatascience.com/biomedical-image-segmentation-unet-991d075a3a4b)] (by Hong Jing)
+- [[Keras](https://www.kaggle.com/meaninglesslives/nested-unet-with-efficientnet-encoder)] (by Siddhartha)
 
 # What is in this repository
 
