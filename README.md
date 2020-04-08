@@ -144,6 +144,14 @@ model.fit(x, y)
 # Citation
 If you use UNet++ for your research, please cite our papers:
 ```
+@article{zhou2019unetplusplus,
+  title={UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation},
+  author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2019},
+  publisher={IEEE}
+}
+
 @incollection{zhou2018unetplusplus,
   title={Unet++: A nested u-net architecture for medical image segmentation},
   author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
