@@ -153,7 +153,7 @@ If you use UNet++ for your research, please cite our papers:
 }
 
 @incollection{zhou2018unetplusplus,
-  title={Unet++: A nested u-net architecture for medical image segmentation},
+  title={Unet++: A Nested U-Net Architecture for Medical Image Segmentation},
   author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
   booktitle={Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
   pages={3--11},
