@@ -1,6 +1,64 @@
-MIT License
+License Text for ASU GitHub Project
 
-Copyright (c) 2018 Zongwei Zhou
+Copyright 2019 Arizona Board of Regents for and on behalf of Arizona State University, a body corporate 
+Patent Pending in the United States of America
+
+LICENSE
+
+Arizona Board of Regents, for and on behalf of Arizona State University, a body corporate (“Licensor”) offers its “Models Genesis: Generic Autodidactic Models for 3D Medical Image Analysis” project (Tech ID no. M19-252LC) (the “Work”) solely for non-commercial use under the following terms and conditions:
+1. Definitions.
+      "License" means the terms and conditions for use, reproduction, and distribution of the Work set forth in this document.
+      "You" (or "Your") shall mean an individual or entity exercising permissions granted by this License.
+      "Source" form means the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+      "Object" form means any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+      "Work" shall mean the work(s) of authorship, whether in Source or Object form, made available under the License, as identified above.
+      "Derivative Works" means any work, whether in Source or Object form, that incorporates, is based on, or is otherwise derived from the Work or from any other Derivative Work authorized under this License and whereby such work  constitutes, as a whole, a separate original work of authorship. For the purposes of this License, Derivative Works do not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+      "Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner of the submission or by an individual authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."
+      "Contributor" shall mean Licensor and any individual or entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+
+2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, revocable (as stated in this section) right to perform any or all of the following actions solely for academic and other non-commercial research purposes: reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object.  Any person or entity wishing to make a commercial use of the Work or a Derivative Work must enter into a separate written agreement with the Licensor and, in the case of a Derivative Work, any other applicable copyright owner of that Derivative Work. For the avoidance of doubt, no licenses to use the Work for commercial or for-profit purposes are granted hereunder.  If Licensor determines in its sole discretion that You have exceeded the scope or otherwise breached the terms of the License granted herein, it shall have the right to terminate the License in addition to all other remedies available to it under common law, by statute, and in equity.
+
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, revocable (as stated in this section) right to make, have made, use, and import the Work solely for academic and other non-commercial research purposes; provided that such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work. Any person or entity wishing to make a commercial use of the Work or a Derivative Work must enter into a separate written agreement with the Licensor and, in the case of a Derivative Work, any other applicable patent owner with claims pertaining to that Derivative Work. For the avoidance of doubt, no licenses to use the Work for commercial or for-profit purposes are granted hereunder.  If You institute patent litigation against any individual or entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work or such Contribution shall terminate as of the date such litigation is filed.  If Licensor determines in its sole discretion that You have exceeded the scope or otherwise breached the terms of the License granted herein, it shall have the right to terminate the License in addition to all other remedies available to it under common law, by statute, and in equity.
+
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+      (a) The reproduction and distribution is only for academic or other non-commercial research purposes;
+      (b) You must give any other recipients of the Work or Derivative Works a copy of this License;
+      (c) You must cause any modified files to carry prominent notices stating that You changed the files and include in a NOTICE text file a description of Your changes; 
+      (d) You must retain, in the Source form of any Derivative Work that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, except for notices that do not pertain to any portion of the Derivative Work;
+      (e) If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Work that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, except for notices that do not pertain to any part of the Derivative Work, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Work; within the Source form or documentation, if provided along with the Derivative Work; or, within a display generated by the Derivative Work, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed          as modifying the License.  You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with all the terms and conditions stated in this License.
+
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of      this License, without any additional terms or conditions.  Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate agreement you may have executed or may execute with Licensor regarding such Contributions.
+
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor.    Pursuant to nominative fair use principles, you may merely identify Licensor as the original author of the Work.
+
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.  LICENSOR HEREBY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHER (INCLUDING ALL WARRANTIES ARISING FROM COURSE OF DEALING, USAGE OR TRADE PRACTICE), AND SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, LICENSOR MAKES NO WARRANTY OF ANY KIND THAT THE WORK, OR ANY OTHER LICENSOR OR THIRD-PARTY GOODS, SERVICES, TECHNOLOGIES OR MATERIALS (INCLUDING ANY SOFTWARE OR HARDWARE), OR ANY PRODUCTS OR RESULTS OF THE USE OF ANY OF THEM, WILL MEET YOUR OR ANY OTHER PERSONS' REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY OTHER GOODS, SERVICES, TECHNOLOGIES OR MATERIALS (INCLUDING ANY SOFTWARE, HARDWARE, SYSTEM OR NETWORK), OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE OR ERROR FREE. ALL OPEN-SOURCE COMPONENTS AND OTHER THIRD-PARTY MATERIALS ARE PROVIDED "AS IS" AND ANY REPRESENTATION OR WARRANTY OF OR CONCERNING ANY OF THEM IS STRICTLY BETWEEN YOU AND THE THIRD-PARTY OWNER OR DISTRIBUTOR OF SUCH OPEN-SOURCE COMPONENTS AND THIRD-PARTY MATERIALS. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+8. Limitation of Liability. UNLESS REQUIRED BY APPLICABLE LAW OR OTHERWISE AGREED IN WRITING, IN NO EVENT WILL LICENSOR OR ANY CONTRIBUTOR BE LIABLE FOR DAMAGES UNDER OR IN CONNECTION WITH THIS LICENSE OR ITS SUBJECT MATTER UNDER ANY LEGAL OR EQUITABLE THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY AND OTHERWISE, FOR ANY (a) INCREASED COSTS, DIMINUTION IN VALUE OR LOST BUSINESS, PRODUCTION, REVENUES OR PROFITS, (b) LOSS OF GOODWILL OR REPUTATION, (c) USE, INABILITY TO USE, LOSS, INTERRUPTION, DELAY OR RECOVERY OF ANY LICENSED SOFTWARE[ OR OPEN-SOURCE COMPONENTS OR OTHER THIRD-PARTY MATERIALS], (d) LOSS, DAMAGE, CORRUPTION OR RECOVERY OF DATA, OR BREACH OF DATA OR SYSTEM SECURITY, (e) COST OF REPLACEMENT GOODS OR SERVICES, OR (e) CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, ENHANCED OR PUNITIVE DAMAGES, IN EACH CASE REGARDLESS OF WHETHER SUCH PERSONS WERE ADVISED OF THE POSSIBILITY OF SUCH LOSSES OR DAMAGES OR SUCH LOSSES OR DAMAGES WERE OTHERWISE FORESEEABLE, AND NOTWITHSTANDING THE FAILURE OF ANY AGREED OR OTHER REMEDY OF ITS ESSENTIAL PURPOSE
+
+9. Keras Library.  The Work includes and is implemented on the Keras library.  The Keras library is offered under the MIT License as follows:
+COPYRIGHT
+All contributions by François Chollet:
+Copyright (c) 2015 - 2019, François Chollet.
+All rights reserved.
+
+All contributions by Google:
+Copyright (c) 2015 - 2019, Google, Inc.
+All rights reserved.
+
+All contributions by Microsoft:
+Copyright (c) 2017 - 2019, Microsoft, Inc.
+All rights reserved.
+
+All other contributions:
+Copyright (c) 2015 - 2019, the respective contributors.
+All rights reserved.
+
+Each contributor holds copyright over their respective contributions.
+The project versioning (Git) records all such contribution source information.
+
+LICENSE FOR KERAS
+
+The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
