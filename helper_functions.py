@@ -196,7 +196,7 @@ def wU_Net(img_rows, img_cols, color_type=1, num_class=1):
 Standard UNet++ [Zhou et.al, 2018]
 Total params: 9,041,601
 """
-def Nest_Net(img_rows, img_cols, color_type=1, num_class=1, deep_supervision=False):
+def UNetPlusPlus(img_rows, img_cols, color_type=1, num_class=1, deep_supervision=False):
 
     nb_filter = [32,64,128,256,512]
 
@@ -287,5 +287,5 @@ if __name__ == '__main__':
     model = wU_Net(96,96,1)
     model.summary()
 
-    model = Nest_Net(96,96,1)
+    model = UNetPlusPlus(96,96,1)
     model.summary()
