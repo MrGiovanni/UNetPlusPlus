@@ -37,7 +37,7 @@ Linux, Python 3.7+, PyTorch 1.6+ and other common packages listed in `requiremen
 | experiment      | Liver 1_Dice | Liver 2_Dice | 
 |---------------------|:--:|:------------:|
 | U-Net (reported)               | 95.71 |  63.72  |
-| U-Net (reproduced)          |  | 62.61 |
+| U-Net (reproduced)          | 96.18 | 63.37 |
 | UNet++            | 96.11 |  66.25  |
 
 
