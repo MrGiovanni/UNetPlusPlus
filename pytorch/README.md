@@ -1,5 +1,7 @@
 # UNet++: Official PyTorch Implementation
 
+**To be released on Dec 3rd, 2020**
+
 This repository provides the official **PyTorch** implementation of UNet++ in the following papers:
 
 **UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation** <br/>
