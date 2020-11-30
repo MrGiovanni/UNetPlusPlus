@@ -31,7 +31,7 @@ Linux, Python 3.7+, PyTorch 1.6+ and other common packages listed in `requiremen
 
 ### 2. Installation
 
-Please follow the installation step from [install] (https://github.com/MIC-DKFZ/nnUNet/blob/master/readme.md)
+Please follow the installation step from [install](https://github.com/MIC-DKFZ/nnUNet/blob/master/readme.md)
 
 ### 3. Running the scripts
 
