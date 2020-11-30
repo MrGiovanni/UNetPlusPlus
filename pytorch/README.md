@@ -42,7 +42,7 @@ Linux, Python 3.7+, PyTorch 1.6+ and other common packages listed in `requiremen
 | U-Net (reproduced)          | 96.18 | 63.37 |
 | UNet++            | 96.11 |  66.25  |
 
-- Run the following command to fine-tune the model on Task003_Liver:
+- Run the following command to run training on Task003_Liver:
 
 ```bash
 For FOLD in 0 1 2 3 4
