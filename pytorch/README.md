@@ -1,7 +1,5 @@
 # UNet++: Official PyTorch Implementation
 
-**To be released on Dec 3rd, 2020**
-
 This repository provides the official **PyTorch** implementation of UNet++ in the following papers:
 
 **UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation** <br/>
@@ -27,7 +25,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 ## How to use UNet++
 
 ### 1. Requirements
-Linux, Python 3.7+, PyTorch 1.6+ and other common packages listed in `requirements.txt`.
+Linux, Python 3.7+, PyTorch 1.6+
 
 ### 2. Installation
 
@@ -52,18 +50,14 @@ pip install -e .
 | U-Net (reproduced)          | 96.18 | 63.37 |
 | UNet++            | 96.11 |  66.25  |
 
-- Run the following command to run training on Task003_Liver:
+- Run the following command to train on Task003_Liver:
 
 ```bash
-For FOLD in 0 1 2 3 4
+for FOLD in 0 1 2 3 4
 do
 nnUNet_train 3d_fullres nnUNetPlusPlusTrainerV2 Task003_Liver $FOLD
 done
 ```
-
-## Code examples for your own data
-
-
 
 ## Citation
 If you use UNet++ for your research, please cite our papers:
