@@ -1,6 +1,6 @@
 # UNet++: Official PyTorch Implementation
 
-This repository provides the official **PyTorch** implementation of UNet++ in the following papers:
+Built upon [MIC-DKFZ/nnUNet](https://github.com/MIC-DKFZ/nnUNet), this repository provides the official **PyTorch** implementation of UNet++ in the following papers:
 
 **UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation** <br/>
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
