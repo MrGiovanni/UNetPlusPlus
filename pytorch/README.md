@@ -47,8 +47,13 @@ pip install -e .
 | experiment      | Liver 1_Dice | Liver 2_Dice | 
 |---------------------|:--:|:------------:|
 | U-Net (reported)               | 95.71 |  63.72  |
-| U-Net (reproduced)          | 96.18 | 63.37 |
-| UNet++            | 96.11 |  66.25  |
+| U-Net (reproduced)          | **96.18** | 63.37 |
+| UNet++ (1st branch)         |    |    |
+| UNet++ (2nd branch)        |    |    |
+| UNet++ (3rd branch)         | 95.78 |  65.83  |
+| UNet++ (4th branch)         | 96.03 | 66.02   |
+| UNet++ (5th branch)         | 96.11 |  **66.25**  |
+| UNet++ (average)            |  95.80 |  65.60  |
 
 - Run the following command to train on Task003_Liver:
 
