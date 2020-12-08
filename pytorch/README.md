@@ -48,7 +48,7 @@ pip install -e .
 |---------------------|:--:|:------------:|
 | U-Net (reported)               | 95.71 |  63.72  |
 | U-Net (reproduced)          | **96.18** | 63.37 |
-| UNet++ (1st branch)         |    |    |
+| UNet++ (1st branch)         | 89.96 | 38.03 |
 | UNet++ (2nd branch)        | 94.68 | 59.66 |
 | UNet++ (3rd branch)         | 95.78 |  65.83  |
 | UNet++ (4th branch)         | 96.03 | 66.02   |
