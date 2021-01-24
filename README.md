@@ -24,6 +24,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 - pytorch/
 
 ## Other implementation
+- [[PyTorch](https://github.com/qubvel/segmentation_models.pytorch)] (by Pavel Yakubovskiy)
 - [[PyTorch](https://github.com/4uiiurz1/pytorch-nested-unet)] (by 4ui_iurz1)
 - [[PyTorch](https://towardsdatascience.com/biomedical-image-segmentation-unet-991d075a3a4b)] (by Hong Jing)
 - [[PyTorch](https://github.com/ZJUGiveLab/UNet-Version)] (by ZJUGiveLab)
