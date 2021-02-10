@@ -52,7 +52,7 @@ pip install -e .
 | UNet++ (2nd branch)        | 94.68 | 59.66 | - | - |
 | UNet++ (3rd branch)         | 95.78 |  65.83  | - | - |
 | UNet++ (4th branch)         | 96.03 | 66.02   | - | - |
-| UNet++ (5th branch)         | 96.11 |  **66.25**  |  |  |
+| UNet++ (5th branch)         | 96.11 |  **66.25**  | 95.21 | **76.53** |
 | UNet++ (average)            |  95.80 |  65.60  | - | - |
 
 - Run the following command to train on Task003_Liver:
