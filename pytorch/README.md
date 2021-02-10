@@ -44,9 +44,9 @@ pip install -e .
 
 #### Application 1: Liver and tumour segmentation in Medical Segmentation Decathlon ([download models](https://drive.google.com/drive/folders/1mY6nOoL9ddHyFqNIKqBN9l3GhPegye8H?usp=sharing))
 
-| experiment      | Liver 1_Dice (val) | Liver 2_Dice (val) | Liver 1_Dice (te) | Liver 2_Dice (te) | 
+| experiment      | Liver 1_Dice (val) | Liver 2_Dice (val) | Liver 1_Dice (test) | Liver 2_Dice (te) | 
 |-----------------|:------------------:|:------------------:|:-----------------:|:-----------------:|
-| U-Net (reported)               | 95.71 |  63.72  |  |  |
+| U-Net (reported)               | 95.71 |  63.72  | 95.75 | 75.97 |
 | U-Net (reproduced)          | **96.18** | 63.37 | - | - |
 | UNet++ (1st branch)         | 89.96 | 38.03 | - | - |
 | UNet++ (2nd branch)        | 94.68 | 59.66 | - | - |
