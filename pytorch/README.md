@@ -42,7 +42,7 @@ pip install -e .
 
 ### 3. Running the scripts
 
-#### Application 1: Liver and tumour segmentation in [Medical Segmentation Decathlon](http://medicaldecathlon.com/) ([download models](https://drive.google.com/drive/folders/1mY6nOoL9ddHyFqNIKqBN9l3GhPegye8H?usp=sharing))
+#### Application 1: Liver and tumour segmentation in Medical Segmentation Decathlon ([download models](https://drive.google.com/drive/folders/1mY6nOoL9ddHyFqNIKqBN9l3GhPegye8H?usp=sharing))
 
 | experiment      | Liver 1_Dice | Liver 2_Dice | 
 |---------------------|:--:|:------------:|
