@@ -44,16 +44,16 @@ pip install -e .
 
 #### Application 1: Liver and tumour segmentation in Medical Segmentation Decathlon ([download models](https://drive.google.com/drive/folders/1mY6nOoL9ddHyFqNIKqBN9l3GhPegye8H?usp=sharing))
 
-| experiment      | Liver 1_Dice | Liver 2_Dice | 
-|---------------------|:--:|:------------:|
-| U-Net (reported)               | 95.71 |  63.72  |
-| U-Net (reproduced)          | **96.18** | 63.37 |
-| UNet++ (1st branch)         | 89.96 | 38.03 |
-| UNet++ (2nd branch)        | 94.68 | 59.66 |
-| UNet++ (3rd branch)         | 95.78 |  65.83  |
-| UNet++ (4th branch)         | 96.03 | 66.02   |
-| UNet++ (5th branch)         | 96.11 |  **66.25**  |
-| UNet++ (average)            |  95.80 |  65.60  |
+| experiment      | Liver 1_Dice (val) | Liver 2_Dice (val) | Liver 1_Dice (te) | Liver 2_Dice (te) | 
+|-----------------|:------------------:|:------------------:|:-----------------:|:-----------------:|
+| U-Net (reported)               | 95.71 |  63.72  |  |  |
+| U-Net (reproduced)          | **96.18** | 63.37 | - | - |
+| UNet++ (1st branch)         | 89.96 | 38.03 | - | - |
+| UNet++ (2nd branch)        | 94.68 | 59.66 | - | - |
+| UNet++ (3rd branch)         | 95.78 |  65.83  | - | - |
+| UNet++ (4th branch)         | 96.03 | 66.02   | - | - |
+| UNet++ (5th branch)         | 96.11 |  **66.25**  |  |  |
+| UNet++ (average)            |  95.80 |  65.60  | - | - |
 
 - Run the following command to train on Task003_Liver:
 
