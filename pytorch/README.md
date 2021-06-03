@@ -6,13 +6,18 @@ Built upon [MIC-DKFZ/nnUNet](https://github.com/MIC-DKFZ/nnUNet), this repositor
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 IEEE Transactions on Medical Imaging ([TMI](https://ieee-tmi.org/)) <br/>
-[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/Nested-UNet)
+[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/UNetPlusPlus)
 
 **UNet++: A Nested U-Net Architecture for Medical Image Segmentation** <br/>
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)** <br/>
-[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/Nested-UNet) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
+[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/UNetPlusPlus) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
+
+**Pre-Trained Models for nnUNet** <br/>
+[Shivam Bajpai](https://www.linkedin.com/in/shivam-bajpai-69937734/) <br/>
+Master's Degree Thesis, Arizona State University <br/>
+[paper](https://www.proquest.com/docview/2532501890?pq-origsite=gscholar&fromopenview=true) | [code](https://github.com/MrGiovanni/UNetPlusPlus/tree/master/pytorch)
 
 
 ## What is in this repository
@@ -82,6 +87,13 @@ If you use UNet++ for your research, please cite our papers:
   pages={3--11},
   year={2018},
   publisher={Springer}
+}
+
+@phdthesis{bajpai2021pre,
+  title={Pre-Trained Models for nnUNet},
+  author={Bajpai, Shivam},
+  year={2021},
+  school={Arizona State University}
 }
 ```
 
