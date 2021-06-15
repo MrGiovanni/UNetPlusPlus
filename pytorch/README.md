@@ -95,6 +95,13 @@ If you use UNet++ for your research, please cite our papers:
   year={2021},
   school={Arizona State University}
 }
+
+@phdthesis{zhou2021towards,
+  title={Towards Annotation-Efficient Deep Learning for Computer-Aided Diagnosis},
+  author={Zhou, Zongwei},
+  year={2021},
+  school={Arizona State University}
+}
 ```
 
 ## Acknowledgments
