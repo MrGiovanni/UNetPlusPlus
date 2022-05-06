@@ -30,6 +30,7 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 - [[PyTorch](https://github.com/ZJUGiveLab/UNet-Version)] (by ZJUGiveLab)
 - [[PyTorch](https://github.com/MontaEllis/Pytorch-Medical-Segmentation)] (by MontaEllis)
 - [[Keras](https://www.kaggle.com/meaninglesslives/nested-unet-with-efficientnet-encoder)] (by Siddhartha)
+- [[Keras](https://gist.github.com/innat/2d2fd2e93b47dd5349095182eb984ef6)] (by [M.Innat](https://github.com/innat))
 
 
 
