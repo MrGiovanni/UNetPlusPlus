@@ -17,7 +17,6 @@ setup(name='nnunet',
             "scipy",
             "batchgenerators>=0.21",
             "numpy",
-            "sklearn",
             "SimpleITK",
             "pandas",
             "nibabel", 'tifffile'
