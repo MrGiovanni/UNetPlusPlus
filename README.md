@@ -9,23 +9,23 @@
 
 <p align="center"><img width="100%" src="Figures/fig_unet++.png" /></p>
 
-UNet++ is a new general purpose image segmentation architecture for more accurate image segmentation. UNet++ consists of U-Nets of varying depths whose decoders are densely connected at the same resolution via the redesigned skip pathways, which aim to address two key challenges of the U-Net: 1) unknown depth of the optimal architecture and 2) the unnecessarily restrictive design of skip connections.
+UNet++ is a nested U-Net architecture for medical image segmentation. It consists of U-Nets of varying depths whose decoders are densely connected at the same resolution through redesigned skip pathways. This addresses two limitations of the original U-Net: the unknown optimal depth of the architecture, and the unnecessarily restrictive design of its skip connections.
 
 ## Paper
 
-This repository provides the official Keras implementation of UNet++ in the following papers:
+This repository provides the official Keras and PyTorch implementations of UNet++, from the following papers:
 
 **UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation** <br/>
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 IEEE Transactions on Medical Imaging ([TMI](https://ieee-tmi.org/)) <br/>
-[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/Nested-UNet)
+[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/UNetPlusPlus)
 
 **UNet++: A Nested U-Net Architecture for Medical Image Segmentation** <br/>
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)** <br/>
-[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/Nested-UNet) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
+[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/UNetPlusPlus) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
 
 ## Official implementation
 
@@ -33,11 +33,10 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 - pytorch/
 
 ## Other implementation
-- [[PyTorch](https://github.com/qubvel/segmentation_models.pytorch)] (by Pavel Yakubovskiy)
+- [[PyTorch](https://github.com/qubvel-org/segmentation_models.pytorch)] (by Pavel Yakubovskiy)
 - [[PyTorch](https://github.com/4uiiurz1/pytorch-nested-unet)] (by 4ui_iurz1)
-- [[PyTorch](https://towardsdatascience.com/biomedical-image-segmentation-unet-991d075a3a4b)] (by Hong Jing)
 - [[PyTorch](https://github.com/ZJUGiveLab/UNet-Version)] (by ZJUGiveLab)
-- [[PyTorch](https://github.com/MontaEllis/Pytorch-Medical-Segmentation)] (by MontaEllis)
+- [[PyTorch](https://github.com/MontaEllis/Pytorch-Medical-Segmentation)] (by MontaEllis, deprecated)
 - [[Keras](https://www.kaggle.com/meaninglesslives/nested-unet-with-efficientnet-encoder)] (by Siddhartha)
 
 
@@ -49,6 +48,9 @@ If you use UNet++ for your research, please cite our papers:
   title={UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation},
   author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
   journal={IEEE Transactions on Medical Imaging},
+  volume={39},
+  number={6},
+  pages={1856--1867},
   year={2019},
   publisher={IEEE}
 }

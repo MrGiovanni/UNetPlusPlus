@@ -6,13 +6,13 @@ This repository provides the official **Keras** implementation of UNet++ in the 
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 IEEE Transactions on Medical Imaging ([TMI](https://ieee-tmi.org/)) <br/>
-[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/Nested-UNet)
+[paper](https://arxiv.org/abs/1912.05074) | [code](https://github.com/MrGiovanni/UNetPlusPlus)
 
 **UNet++: A Nested U-Net Architecture for Medical Image Segmentation** <br/>
 [Zongwei Zhou](https://www.zongweiz.com), [Md Mahfuzur Rahman Siddiquee](https://github.com/mahfuzmohammad), [Nima Tajbakhsh](https://www.linkedin.com/in/nima-tajbakhsh-b5454376/), and [Jianming Liang](https://chs.asu.edu/jianming-liang) <br/>
 Arizona State University <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)** <br/>
-[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/Nested-UNet) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
+[paper](https://arxiv.org/abs/1807.10165) | [code](https://github.com/MrGiovanni/UNetPlusPlus) | [slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf) | [poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf) | [blog](https://zhuanlan.zhihu.com/p/44958351)
 
 
 ## What is in this repository
@@ -78,9 +78,9 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
 
 #### Application 3: [Polyp Segmentation (ASU-Mayo)](https://polyp.grand-challenge.org/databases/)
 
-#### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI)
+#### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://www.cancerimagingarchive.net/collection/lidc-idri/)
 
-#### Application 5: [Multiparametric Brain Tumor Segmentation (BRATS 2013)](https://www.smir.ch/BRATS/Start2013)
+#### Application 5: Multiparametric Brain Tumor Segmentation (BRATS 2013)
 ```bash
 CUDA_VISIBLE_DEVICES=0 python BRATS2013_application.py --run 1 \
                                                      --arch Xnet \
@@ -108,7 +108,7 @@ x, y = ... # range in [0,1], the network expects input channels of 3
 # prepare model
 model = Xnet(backbone_name='resnet50', encoder_weights='imagenet', decoder_block_type='transpose') # build UNet++
 # model = Unet(backbone_name='resnet50', encoder_weights='imagenet', decoder_block_type='transpose') # build U-Net
-# model = NestNet(backbone_name='resnet50', encoder_weights='imagenet', decoder_block_type='transpose') # build DLA
+# model = Nestnet(backbone_name='resnet50', encoder_weights='imagenet', decoder_block_type='transpose') # build DLA
 
 model.compile('Adam', 'binary_crossentropy', ['binary_accuracy'])
 
@@ -122,7 +122,7 @@ model.fit(x, y)
 - [x] Add ResNeXt backbone for UNet++
 - [ ] Add DenseNet backbone for UNet++
 - [ ] Add Inception backbone for UNet++
-- [ ] Add [Tiramisu](https://arxiv.org/pdf/1611.09326.pdf]) and Tiramisu++
+- [ ] Add [Tiramisu](https://arxiv.org/pdf/1611.09326.pdf) and Tiramisu++
 - [ ] Add FPN++
 - [ ] Add Linknet++
 - [ ] Add PSPNet++
@@ -134,6 +134,9 @@ If you use UNet++ for your research, please cite our papers:
   title={UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation},
   author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
   journal={IEEE Transactions on Medical Imaging},
+  volume={39},
+  number={6},
+  pages={1856--1867},
   year={2019},
   publisher={IEEE}
 }

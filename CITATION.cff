@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use UNet++, please cite the IEEE Transactions on Medical Imaging paper below."
+title: "UNet++: a nested U-Net architecture for medical image segmentation"
+abstract: "Official implementation of UNet++, a nested and densely connected U-Net architecture with redesigned skip connections for medical image segmentation."
+type: software
+repository-code: "https://github.com/MrGiovanni/UNetPlusPlus"
+url: "https://github.com/MrGiovanni/UNetPlusPlus"
+license-url: "https://github.com/MrGiovanni/UNetPlusPlus/blob/master/LICENSE"
+keywords:
+  - "medical-image-segmentation"
+  - "unet"
+  - "unet-plus-plus"
+  - "deep-learning"
+  - "semantic-segmentation"
+  - "medical-imaging"
+authors:
+  - family-names: "Zhou"
+    given-names: "Zongwei"
+    orcid: "https://orcid.org/0000-0002-3154-9851"
+  - family-names: "Siddiquee"
+    given-names: "Md Mahfuzur Rahman"
+  - family-names: "Tajbakhsh"
+    given-names: "Nima"
+  - family-names: "Liang"
+    given-names: "Jianming"
+preferred-citation:
+  type: article
+  title: "UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation"
+  authors:
+    - family-names: "Zhou"
+      given-names: "Zongwei"
+      orcid: "https://orcid.org/0000-0002-3154-9851"
+    - family-names: "Siddiquee"
+      given-names: "Md Mahfuzur Rahman"
+    - family-names: "Tajbakhsh"
+      given-names: "Nima"
+    - family-names: "Liang"
+      given-names: "Jianming"
+  journal: "IEEE Transactions on Medical Imaging"
+  volume: 39
+  issue: 6
+  start: 1856
+  end: 1867
+  year: 2019
+  doi: "10.1109/TMI.2019.2959609"
+references:
+  - type: conference-paper
+    title: "UNet++: A Nested U-Net Architecture for Medical Image Segmentation"
+    authors:
+      - family-names: "Zhou"
+        given-names: "Zongwei"
+        orcid: "https://orcid.org/0000-0002-3154-9851"
+      - family-names: "Siddiquee"
+        given-names: "Md Mahfuzur Rahman"
+      - family-names: "Tajbakhsh"
+        given-names: "Nima"
+      - family-names: "Liang"
+        given-names: "Jianming"
+    collection-title: "Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support"
+    publisher:
+      name: "Springer"
+    start: 3
+    end: 11
+    year: 2018
+    doi: "10.1007/978-3-030-00889-5_1"

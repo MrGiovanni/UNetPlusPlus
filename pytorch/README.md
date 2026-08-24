@@ -34,7 +34,7 @@ Linux, Python 3.7+, PyTorch 1.6+
 
 ### 2. Installation
 
-- Create virtual environment. [Here is a quick how-to for Ubuntu](https://linoxide.com/linux-how-to/setup-python-virtual-environment-ubuntu/)
+- Create virtual environment. [Here is the official Python venv guide](https://docs.python.org/3/library/venv.html)
 - Install [PyTorch](https://pytorch.org/get-started/locally/)
 - Install nnUNet++ as below
 ```
@@ -49,7 +49,7 @@ pip install -e .
 
 #### Application 1: Liver and tumor segmentation in Medical Segmentation Decathlon ([download models](https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/zzhou82_jh_edu/EqD4y4d0-zNGlqTMR0h_h4MB2HQC_RdoOlYUSC2FxaXI2w?e=xPpmGy))
 
-| experiment      | Liver 1_Dice (val) | Liver 2_Dice (val) | Liver 1_Dice (test) | Liver 2_Dice (te) | 
+| experiment      | Liver 1_Dice (val) | Liver 2_Dice (val) | Liver 1_Dice (test) | Liver 2_Dice (test) | 
 |-----------------|:------------------:|:------------------:|:-----------------:|:-----------------:|
 | U-Net (reported)               | 95.71 |  63.72  | 95.75 | 75.97 |
 | U-Net (reproduced)          | **96.18** | 63.37 | - | - |
@@ -76,6 +76,9 @@ If you use UNet++ for your research, please cite our papers:
   title={UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation},
   author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
   journal={IEEE Transactions on Medical Imaging},
+  volume={39},
+  number={6},
+  pages={1856--1867},
   year={2019},
   publisher={IEEE}
 }
@@ -89,7 +92,7 @@ If you use UNet++ for your research, please cite our papers:
   publisher={Springer}
 }
 
-@phdthesis{bajpai2021pre,
+@mastersthesis{bajpai2021pre,
   title={Pre-Trained Models for nnUNet},
   author={Bajpai, Shivam},
   year={2021},
