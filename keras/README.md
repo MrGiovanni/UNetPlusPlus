@@ -137,12 +137,13 @@ If you use UNet++ for your research, please cite our papers:
   volume={39},
   number={6},
   pages={1856--1867},
-  year={2019},
+  year={2020},
+  doi={10.1109/TMI.2019.2959609},
   publisher={IEEE}
 }
 
 @incollection{zhou2018unetplusplus,
-  title={Unet++: A Nested U-Net Architecture for Medical Image Segmentation},
+  title={UNet++: A Nested U-Net Architecture for Medical Image Segmentation},
   author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
   booktitle={Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
   pages={3--11},
