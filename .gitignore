@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
